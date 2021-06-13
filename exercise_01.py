@@ -3,3 +3,16 @@
 # Hints: Consider use range(#begin, #end) method
 
 # Solution:
+
+# CREATE EMPTY LIST
+l = []
+
+# FOR LOOP WITH RANGE
+for num in range(2000, 3200):
+    # CHECK FOR DIVISIBILITY
+    if (num % 7 == 0) and (num % 5 != 0):
+        # IF PASSES => APPEND NUM AS STR
+        l.append(str(num))
+
+# PRINT SEPARATED BY COMMAS
+print(",".join(l))
