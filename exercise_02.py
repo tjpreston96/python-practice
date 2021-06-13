@@ -3,3 +3,14 @@
 # Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
 
 # Solution:
+
+
+def fact(x):
+    if x == 0:
+        return 1
+    return x * fact(x - 1)
+
+
+x = int(input("Please enter the number 8: "))
+print("Expected result => 40320")
+print(fact(x))
